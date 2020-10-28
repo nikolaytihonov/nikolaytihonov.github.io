@@ -10,6 +10,8 @@
 	
 	<body>
 		<script>
+			var name_color = "#FF00007F";
+			
 			window.onload = function() {
 				Particles.init({
 					selector: ".background",
@@ -31,7 +33,10 @@
 					}]
 				})
 				
-				sc_init();
+				var names = document.getElementsByClassName("g");
+				for (var i = 0; i < names.length; i++) {
+					names[i].style.color = name_color;
+				}
 			}
 		</script>
 		<style>
@@ -109,7 +114,7 @@
 			}
 
 			[class~=g] {
-				color: #ff0000
+				color: #00000000
 			}
 		</style>
 	
@@ -128,28 +133,28 @@
 
 		<br>
 		<div class="f g" style=position:absolute;top:7%>
-			<marquee scrolldelay=300>Николай Тихонов</marquee>
+			<marquee scrolldelay=20 scrollamount=1>Николай Тихонов</marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:25%>
-			<marquee scrolldelay=400>Алекс В отъезде</marquee>
+			<marquee scrolldelay=30 scrollamount=1>Алекс В отъезде</marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:35%>
-			<marquee scrolldelay=400>Forcer</marquee>
+			<marquee scrolldelay=40 scrollamount=1>Forcer</marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:45%>
-			<marquee scrolldelay=600></marquee>
+			<marquee scrolldelay=50 scrollamount=1></marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:55%>
-			<marquee scrolldelay=700>Eu 11111</marquee>
+			<marquee scrolldelay=60 scrollamount=1>Eu 11111</marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:65%>
-			<marquee scrolldelay=800>Дмитрий Белый</marquee>
+			<marquee scrolldelay=70 scrollamount=1 >Дмитрий Белый</marquee>
 		</div>
 		<div class="f g" style=position:absolute;top:75%>
-			<marquee scrolldelay=900>jac76</marquee>
+			<marquee scrolldelay=80 scrollamount=1>jac76</marquee>
 		</div>
-		<div class=f style=position:absolute;top:85%>
-			<marquee scrolldelay=1000>Advanced</marquee>
+		<div class="f g" style=position:absolute;top:85%>
+			<marquee scrolldelay=100 scrollamount=1>Advanced</marquee>
 		</div>
 		</div>
 		<iframe width="1" height="1" src="https://www.youtube.com/embed/wn3ZaVgbW4M?rel=0&controls=0&showinfo=0&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media"></iframe>
